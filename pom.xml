@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>de.oncampus</groupId>
-    <artifactId>quizlingo</artifactId>
+    <artifactId>quizlingo-server</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>quizlingo</name>
+    <name>quizlingo-server</name>
     <description>Spanish learning quiz game</description>
     <properties>
         <java.version>11</java.version>
@@ -118,5 +118,13 @@
             </build>
         </profile>
     </profiles>
+
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub vquynh Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/vquynh/quizlingo-server</url>
+        </repository>
+    </distributionManagement>
 
 </project>
